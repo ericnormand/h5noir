@@ -1,4 +1,4 @@
-(ns testweb.middleware.compatibility
+(ns h5noir.middleware.compatibility
   (:use ring.util.response))
 
 (defn uav-middleware [hndlr]

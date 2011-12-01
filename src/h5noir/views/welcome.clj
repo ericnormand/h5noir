@@ -1,5 +1,5 @@
-(ns testweb.views.welcome
-  (:require [testweb.views.common :as common])
+(ns h5noir.views.welcome
+  (:require [h5noir.views.common :as common])
   (:use [noir.core :only [defpage]]
         [hiccup.core :only [html]]))
 
@@ -23,17 +23,18 @@
                   [:li "Google Analytics include "]
                   [:li "Javascript included at bottom"]
                   [:li "Other HTML5 Boilerplate goodies like favicons"]
+                  [:li "Custom 404 with Google Webmaster Tools"]
                   ]
                  [:h2 "Coming soon"]
                  [:ul
                   [:li "CSS Grid + Styles Generation"]
-                  [:li "Custom 404 with Google Webmaster Tools"]
                   [:li "ClojureScript build support"]]
                  [:h2 "Things you should do"]
                  [:ul
                   [:li "Review robots.txt policy"]
                   [:li "Review crossdomain.xml policy"]
                   [:li "Edit humans.txt"]
+                  [:li "Change the icons in the resources/public dir"]
                   ]
 
 ))
