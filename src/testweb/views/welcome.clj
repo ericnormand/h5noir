@@ -26,7 +26,14 @@
                   ]
                  [:h2 "Coming soon"]
                  [:ul
-                  [:li "CSS Grid Generation"]
-                  [:li "Automatic custom 404 with Google Webmaster Tools"]]
+                  [:li "CSS Grid + Styles Generation"]
+                  [:li "Custom 404 with Google Webmaster Tools"]
+                  [:li "ClojureScript build support"]]
+                 [:h2 "Things you should do"]
+                 [:ul
+                  [:li "Review robots.txt policy"]
+                  [:li "Review crossdomain.xml policy"]
+                  [:li "Edit humans.txt"]
+                  ]
 
 ))

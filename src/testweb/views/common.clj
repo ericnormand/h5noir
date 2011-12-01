@@ -66,9 +66,12 @@
        ;; Grab Google CDN's jQuery, with a protocol relative URL; fall
        ;; back to local if offline
        (include-js "//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js")
-       (javascript-tag "window.jQuery || document.write('<script src=\"/js/jquery.js\"><\\/script>')")
+       (javascript-tag "window.jQuery || document.write('<script src=\"/js/libs/jquery-1.7.0.min.js\"><\\/script>')")
 
-       ;; def the gacode at the top
+       ;; this includes something to make console.log always work
+       (include-js "/js/plugins.js")
+       
+       ;; def the gacode at the top for Google Analytics
        (when gacode
          (javascript-tag (str "window._gaq = [['_setAccount','"
                               gacode
