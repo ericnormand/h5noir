@@ -2,6 +2,7 @@
   (:require [noir.server :as server]))
 
 (server/load-views "src/testweb/views/")
+(server/load-views "src/testweb/middleware/")
 
 (defn -main [& m]
   (let [mode (keyword (or (first m) :dev))
