@@ -1,8 +1,8 @@
 (ns h5noir.server
-  (:require [noir.server :as server]))
+  (:require [noir.server :as server])
+  (:use [h5noir.middleware.standard]))
 
 (server/load-views "src/h5noir/views/")
-(server/load-views "src/h5noir/middleware/")
 
 (defn -main [& m]
   (let [mode (keyword (or (first m) :dev))
