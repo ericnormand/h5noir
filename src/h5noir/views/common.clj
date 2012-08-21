@@ -13,7 +13,7 @@
 (defpartial footer []
   [:footer])
 
-(defn meta [name content]
+(defn html-meta [name content]
   [:meta {:name name :content content}])
 
 (defpartial layout [title options & content]
@@ -37,16 +37,16 @@
        [:meta {:charset "utf-8"}]
        [:title title]
        (when description
-         (meta "description" description))
+         (html-meta "description" description))
        (when author
-         (meta "author" author))
+         (html-meta "author" author))
        (when keywords
-         (meta "keywords" keywords))
+         (html-meta "keywords" keywords))
 
        ;; note
 
        ;; Mobile viewport optimized: j.mp/bplateviewport
-       (meta "viewport" "width=device-width,initial-scale=1")
+       (html-meta "viewport" "width=device-width,initial-scale=1")
 
        ;; Place favicon.ico and apple-touch-icon.png in the
        ;; resources/public directory:
